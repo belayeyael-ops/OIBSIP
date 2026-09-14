@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #071426, #0d2340);
+    color: white;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 60px 20px 30px;
+}
+
+.converter-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 24px;
+    padding: 45px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.temperature-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #1677ff;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.header h1 {
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.header p {
+    color: #b8c7d9;
+    font-size: 16px;
+}
+
+.input-section {
+    margin-bottom: 40px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.input-row {
+    display: flex;
+    gap: 12px;
+}
+
+input,
+select {
+    height: 55px;
+    border: 1px solid #334a65;
+    border-radius: 12px;
+    background: #101f33;
+    color: white;
+    padding: 0 15px;
+    font-size: 16px;
+    outline: none;
+}
+
+input {
+    flex: 1;
+}
+
+select {
+    width: 220px;
+}
+
+input:focus,
+select:focus {
+    border-color: #1677ff;
+}
+
+button {
+    width: 100%;
+    height: 55px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 12px;
+    background: #1677ff;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #075dcc;
+    transform: translateY(-2px);
+}
+
+.error-message {
+    min-height: 22px;
+    margin-top: 8px;
+    color: #ff7b7b;
+    font-size: 14px;
+}
+
+.results h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.result-box {
+    background: #101f33;
+    border: 1px solid #263e59;
+    border-radius: 16px;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.unit-name {
+    display: block;
+    color: #9fb1c7;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.result-box strong {
+    display: block;
+    font-size: 28px;
+    color: #4d9cff;
+    margin-bottom: 5px;
+}
+
+.result-box span:last-child {
+    color: #b8c7d9;
+}
+
+.info {
+    text-align: center;
+    margin-top: 30px;
+    color: #899bb0;
+    font-size: 13px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 25px;
+    color: #70849b;
+    font-size: 13px;
+}
+
+/* Tablet */
+@media (max-width: 700px) {
+
+    .converter-card {
+        padding: 30px 22px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .input-row {
+        flex-direction: column;
+    }
+
+    select {
+        width: 100%;
+    }
+
+    .result-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Phone */
+@media (max-width: 450px) {
+
+    .container {
+        padding: 25px 12px;
+    }
+
+    .converter-card {
+        padding: 25px 18px;
+        border-radius: 18px;
+    }
+
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .header p {
+        font-size: 14px;
+    }
+
+    .temperature-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 35px;
+    }
+}
