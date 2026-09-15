@@ -1,4 +1,4 @@
-# Web Development & Designing Internship
+# OIB-SIP Web Development & Designing Internship
 
 This repository contains the projects I completed during my Web Development & Designing internship.
 
